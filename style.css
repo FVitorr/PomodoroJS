@@ -75,6 +75,11 @@ body{
     margin-left: auto;
     margin-right: auto;
     overflow-x: hidden;
+    overflow-y: auto;
+}
+.body_ table{
+    width: 100%;
+    text-align: center;
 }
 .rBody{
     height: 100%;

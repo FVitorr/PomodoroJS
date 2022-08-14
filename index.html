@@ -19,13 +19,19 @@
                         Tarefas
                     </h2>
                 </div>
-                <div class="body_">
-
+                <div  class="body_">
+                    <table id = "task" border="1px solid black">
+                        <tr>
+                            <td>TEST</td>
+                            <td>00:00</td>
+                            <td><i class="fa-solid fa-trash-can"></i></td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="footer">
-                    <input type="text" placeholder="New Task">
-                    <input type="text" placeholder="Date">
-                    <i class="fa-solid fa-circle-plus" id="but_add_task"></i>
+                    <input type="text" placeholder="New Task" id="task_name">
+                    <input type="text" placeholder="Date" id="task_time">
+                    <i class="fa-solid fa-circle-plus" id="but_add_task" onclick="add_task()"></i>
                 </div>
             </div>
             <div class="left">
@@ -36,7 +42,13 @@
                         </h2>
                     </div>
                     <div class="body_ min">
-
+                        <table id = "reminder" border="1px solid black">
+                            <tr>
+                                <td>TEST</td>
+                                <td>00:00</td>
+                                <td><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="footer fmin">
                         <input type="text" placeholder="New Task">
@@ -51,7 +63,13 @@
                         </h2>
                     </div>
                     <div class="body_ min">
-
+                        <table id = "reminder" border="1px solid black">
+                            <tr>
+                                <td>TEST</td>
+                                <td>00:00</td>
+                                <td><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="footer fmin">
                         <input type="text" placeholder="New Task">
@@ -73,7 +91,13 @@
                         </h2>
                     </div>
                     <div class="body_ rBody">
-
+                        <table id = "reminder" border="1px solid black">
+                            <tr>
+                                <td>TEST</td>
+                                <td>00:00</td>
+                                <td><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="footer fmin">
                         <input type="text" placeholder="New Task">
@@ -101,6 +125,7 @@
         </div>
     </div>
     <script src = "localStore.js"></script>
+    <script src = "task.js"></script>
     <script src = "time.js"></script>
 </body>
 </html>
