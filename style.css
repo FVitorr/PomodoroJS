@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C;
+}
+body{
+    overflow-y:hidden;
+}
+#body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    background-color: #1C1C1C;
+}
+.header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    background-color: #1C1C1C;
+    width: 99%;
+    height: 7%;
+    overflow-x:hidden;
+}
+.header img {
+    height: 32px;
+    width: 32px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    /*border: 1px solid white;*/
+    width: 47%;
+    height: 93%;
+}
+.right, .left {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    /*border:  1px solid white;*/
+    width: 50%;
+}
+.title{
+    /*border: 1px solid blue;*/
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 90%;
+    /*text-align: center;*/
+}
+.title h2{
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 4;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+    width: 170px;
+}
+.body_{
+    border: 1px solid green;
+    width: 99%;
+    height: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+.rBody{
+    height: 100%;
+}
+.min{
+    height: 65%;
+}
+.footer{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    height: 7%;
+    width: 99%;
+    border: 1px solid black;
+}
+.fmin{
+    height: 15%;
+}
+.footer input{
+    width: 150px;
+    height: 30px;
+}
+.left {
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left_Top, .left_Down {
+    margin-left: auto;
+    margin-right: auto;
+    border:  1px solid white;
+    width: 95%;
+    height: 47%;
+}
+.right {
+    border:  1px solid white;
+}
+
+.cLeft{
+    flex-direction: column;
+    /*border:  1px solid white;*/
+    justify-content: space-between;
+}
+.top, .down {
+    border:  1px solid white;
+    width: 100%;   
+}
+.top{
+    height: 20%;
+}
+.down {
+    height: 75%;
+    display: flex;
+}
+#pomodoro{
+    margin: 40% auto;
+    font-size: 48px;
+    letter-spacing: 5px;
+}
+
+#p_fuction{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.p_buton{
+    font-size: 28px;
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    padding-top: 10px;
+    border: 1px solid black;
+}
