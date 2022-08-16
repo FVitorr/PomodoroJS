@@ -16,6 +16,7 @@ function update_task(){
 update_task()
 
 function add_task(){
+    
     let name = name_task.value;
     let time = time_task.value;
 

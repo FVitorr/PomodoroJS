@@ -34,6 +34,26 @@ function obj_task(task,date){
     localStorage.setItem('key_task',key_task);
     return new_task;
 }
+//Criar objeto Reminder
+function obj_reminder(task,date){
+    const new_reminder = new Object;
+    new_reminder.key = parseInt(key_reminder);
+    new_reminder.reminder = task;
+    new_reminder.date = date;
+    key_reminder++;
+    localStorage.setItem('key_reminder',key_reminder);
+    return new_reminder;
+}
+//Criar objeto Reminder
+function obj_rules(task,date){
+    const new_rules = new Object;
+    new_rules.key = parseInt(key_rules);
+    new_rules.rules = task;
+    new_rules.date = date;
+    key_rules++;
+    localStorage.setItem('key_rules',key_rules);
+    return new_rules;
+}
 //Recarregar as Informaçoes do Local Store para a pagina
 for (var i = 0; i < localStorage.length; i++){
     let restore = localStorage.key(i);

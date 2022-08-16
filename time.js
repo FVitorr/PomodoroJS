@@ -1,7 +1,7 @@
 let minute = 0;
 let second = 0;
 let millisecond = 0;
-let duration = 0.1; //Variavel em Minutos
+let duration = 0.1; //Variavel em Minutos controle da notificação
 let cron;
 let notification_ = 0; //Variavel de controle para notifição
 

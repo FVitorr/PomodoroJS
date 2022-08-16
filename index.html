@@ -21,11 +21,7 @@
                 </div>
                 <div  class="body_">
                     <table id = "task" border="1px solid black">
-                        <tr>
-                            <td>TEST</td>
-                            <td>00:00</td>
-                            <td><i class="fa-solid fa-trash-can"></i></td>
-                        </tr>
+
                     </table>
                 </div>
                 <div class="footer">
@@ -43,17 +39,13 @@
                     </div>
                     <div class="body_ min">
                         <table id = "reminder" border="1px solid black">
-                            <tr>
-                                <td>TEST</td>
-                                <td>00:00</td>
-                                <td><i class="fa-solid fa-trash-can"></i></td>
-                            </tr>
+                            
                         </table>
                     </div>
                     <div class="footer fmin">
-                        <input type="text" placeholder="New Task">
-                        <input type="text" placeholder="Date">
-                        <i class="fa-solid fa-circle-plus" id="but_add_task"></i>
+                        <input type="text" placeholder="New Task" id="reminder_name">
+                        <input type="text" placeholder="Date" id="reminder_time">
+                        <i class="fa-solid fa-circle-plus" id="but_add_task" onclick="add_reminder()"></i>
                     </div>
                 </div>
                 <div class="left_Down">
@@ -63,18 +55,13 @@
                         </h2>
                     </div>
                     <div class="body_ min">
-                        <table id = "reminder" border="1px solid black">
-                            <tr>
-                                <td>TEST</td>
-                                <td>00:00</td>
-                                <td><i class="fa-solid fa-trash-can"></i></td>
-                            </tr>
+                        <table id = "rules" border="1px solid black">
+
                         </table>
                     </div>
                     <div class="footer fmin">
-                        <input type="text" placeholder="New Task">
-                        <input type="text" placeholder="Date">
-                        <i class="fa-solid fa-circle-plus" id="but_add_task"></i>
+                        <input type="text" placeholder="New Rules" id="rules_name">
+                        <i class="fa-solid fa-circle-plus" id="but_add_task" onclick="add_rules()"></i>
                     </div>
                 </div>
             </div>
@@ -126,6 +113,8 @@
     </div>
     <script src = "localStore.js"></script>
     <script src = "task.js"></script>
+    <script src = "reminder.js"></script>
+    <script src = "rules.js"></script>
     <script src = "time.js"></script>
 </body>
 </html>
