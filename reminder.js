@@ -34,3 +34,31 @@ function add_reminder(){
     }
     localStorage.setItem("reminder",JSON.stringify(reminder));
 }
+
+
+function removed_reminder(key){
+    let tr_table = document.getElementsByClassName("tr_reminder");
+    for (let j = 0; j < tr_table.length; j++){
+        console.log(tr_table[j].getAttribute("key"));
+        if (tr_table[j].getAttribute("key") == key){
+            tr_table[j].remove();   
+        }
+    }
+    for (i in array_rules){
+        if (key == array_rules[i].key){
+            console.log("Removed ",key);
+            array_rules.splice(i, 1);
+        }
+    }
+    localStorage.setItem("reminder",JSON.stringify(array_rules));
+    //resetar key_reminder
+    try{
+        if(tr_table.length <= 0){
+            key_reminder = 0;
+            localStorage.setItem('key_reminder',key_reminder);
+        }
+    }catch{
+    
+    }
+
+}

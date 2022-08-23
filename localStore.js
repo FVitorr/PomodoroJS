@@ -45,11 +45,10 @@ function obj_reminder(task,date){
     return new_reminder;
 }
 //Criar objeto Reminder
-function obj_rules(task,date){
+function obj_rules(task){
     const new_rules = new Object;
     new_rules.key = parseInt(key_rules);
     new_rules.rules = task;
-    new_rules.date = date;
     key_rules++;
     localStorage.setItem('key_rules',key_rules);
     return new_rules;

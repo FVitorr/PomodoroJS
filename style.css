@@ -64,8 +64,8 @@ body{
     text-align: center;
     color: aliceblue;
     letter-spacing: 4;
-    border-top: 1px solid rgb(249, 74, 79);
-    border-bottom: 1px solid rgb(249, 74, 79);
+    border-top: 2px solid rgb(249, 74, 79);
+    border-bottom: 2px solid rgb(249, 74, 79);
     width: 170px;
 }
 .body_{
